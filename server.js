@@ -13,7 +13,8 @@ const server = http.createServer(
   seams({
     secret: process.env.SECRET || config.SECRET,
     dir: path.join(__dirname, 'web/dist'),
-    db: process.env.DB || config.DB
+    db: process.env.DB || config.DB,
+		cache: 0
   })
 );
 
