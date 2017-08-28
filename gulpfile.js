@@ -19,7 +19,7 @@ gulp.task('less', () => {
             browsers: ['last 2 versions']
         }))
         .pipe(minifyCSS())
-        .pipe(gulp.dest('./web/dist'));
+        .pipe(gulp.dest('./web/dist/main.css'));
 });
 
 gulp.task('js', () => {
