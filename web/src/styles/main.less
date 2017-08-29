@@ -12,34 +12,30 @@ html, body {
 body {
   background-color: @black;
 }
-
+#seams-admin-panel-logout-btn {
+  top: auto;
+  bottom: 4px;
+}
 #main-menu {
+  position: fixed;
+  background: linear-gradient(135deg,#527b8b 15%,#ddc27e 85%);
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  min-width: 0;
+  min-height: 0;
   top: @spacing;
   right: @spacing;
   overflow: hidden;
-  transition: width .3s ease, height .3s ease, border-radius .1s ease .25s, right .3s ease, top .3s ease;
+  transition: all @anim-speed;
   &.open {
-    top: 0;
-    right: 0;
+    top: 50%;
+    right: 50%;
     width: 145vw;
     height: 145vw;
     min-height: 145vh;
     min-width: 145vh;
-  }
-  &:before {
-    content: '';
-    display: block;
-    background: linear-gradient(135deg,#527b8b 15%,#ddc27e 85%);
-
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 1px 10px #000;
-
-    width: 100vw;
-    height: 100vh;
+    transform: translate(50%, -50%);
   }
 }
 

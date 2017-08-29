@@ -1,0 +1,27 @@
+// main: main.less
+@import "config.less";
+
+._clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+._centerElemX() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+._centerElemY() {
+  position: absolute;
+  top: 50%;
+  transform: translteY(-50%);
+}
+._centerElemXY() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

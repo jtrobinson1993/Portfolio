@@ -14,7 +14,7 @@ const server = http.createServer(
     secret: process.env.SECRET || config.SECRET,
     dir: path.join(__dirname, 'web/dist'),
     db: process.env.DB || config.DB,
-		cache: 0
+		cache: 1
   })
 );
 
