@@ -1,4 +1,6 @@
 @import "config.less";
+@import "mixins.less";
+@import "reset.less";
 
 * {
   box-sizing: border-box;
@@ -10,34 +12,22 @@ html, body {
 }
 
 body {
-  background-color: @black;
+  font-size: 100%;
+  font-family: 'Encode Sans', Helvetica, sans-serif;
+  background-color: @white;
+  color: @black;
 }
+
+
+
+// Seams Specific Styles
+
 #seams-admin-panel-logout-btn {
   top: auto;
   bottom: 4px;
 }
-#main-menu {
-  position: fixed;
-  background: linear-gradient(135deg,#527b8b 15%,#ddc27e 85%);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  min-width: 0;
-  min-height: 0;
-  top: @spacing;
-  right: @spacing;
-  overflow: hidden;
-  transition: all @anim-speed;
-  &.open {
-    top: 50%;
-    right: 50%;
-    width: 145vw;
-    height: 145vw;
-    min-height: 145vh;
-    min-width: 145vh;
-    transform: translate(50%, -50%);
-  }
-}
+
+// End Seams Specific Styles
 
 #page-contain {
   display: table;
@@ -58,3 +48,6 @@ body {
 h1 {
   font-weight: 100;
 }
+
+
+@import "_partials/_header.less";

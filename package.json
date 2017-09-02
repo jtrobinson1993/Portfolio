@@ -14,7 +14,7 @@
     "gulp-cleanhtml": "^1.0.3",
     "gulp-less": "^3.3.2",
     "gulp-uglifyjs": "^0.6.2",
-    "seams": "^0.3.3"
+    "seams": "^0.4.0"
   },
   "devDependencies": {},
   "scripts": {
